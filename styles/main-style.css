@@ -1,6 +1,5 @@
 @import "navbar-style.css";
 @import "mobile-style.css";
-@import "tablet-style.css";
 @import "post.css";
 *{
     font-family: sans-serif;
@@ -8,4 +7,85 @@
 
 h1{
     color: white;
+}
+
+/* ---ipad layout------*/
+@media(min-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 1fr auto 80px;
+        grid-template-areas: 
+        "hd hd"
+        "sub topics"
+        "content content"
+        "ft ft";
+    }
+
+    .navbar{
+        grid-area: hd;
+    }
+
+    .subscribe{
+        grid-area: sub;
+    }
+
+    .topics{
+        grid-area: topics;
+    }
+
+    .content{
+        grid-area: content;
+    }
+
+    .ft{
+        grid-area: ft;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav-items{
+        opacity: 1;
+        position: initial;
+        flex-direction: row;
+        width:50%;
+        height: 50%;
+        pointer-events: all;
+        margin:0;
+        padding: 0;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .post-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hd"
+        "post"
+        "related"
+        "ft";
+    }
+
+    .author {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .avatar{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

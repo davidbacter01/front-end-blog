@@ -15,7 +15,7 @@
     color: white;
 }
 
-#submit{
+.submit-btn{
     margin-top: 5px;
     padding: 5px auto 5px auto;
     border: none;
@@ -26,7 +26,7 @@
     background-color: rgb(34, 185, 34);
 }
 
-#submit:hover{
+.submit-btn:hover{
     opacity: 0.75;
     cursor: pointer;
 }

@@ -4,12 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Blog Project</title>
+    <link rel="stylesheet" href="./styles/main-style.css">
+    <title>The Blog</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <header class="navbar">
+            <h1>The Blog</h1>
+            <button class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <nav class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="sub-form">Subscribe</a>
+            </nav>
+        </header>
+        <div class="content">
+            <form action="#" class="subscribe" id="sub-form">
+                <h2>Welcome to The Blog!</h2>
+                <h3>The best blog online!</h3>
+                <label for="email">Subscribe to our newsletter!</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email here">
+                <br>
+                <input id="name" name="name" type="text" placeholder="Enter your name here">
+                <br>
+                <input type="submit" id="submit" value="Subscribe!">
+            </form>
+            <article class="post-card">
+                <hr>
+                <div class="post-header">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="hero-img">
+                        <img src="./imgs/lorem.png" alt="">
+                    </div>
+                    <span>Author Name</span>
+                    <span class="date">01-06-2020</span>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur <em>adipisicing elit</em>.
+                    <strong>Necessitatibus repudiandae</strong> corporis iusto fugiat unde sit, aliquam excepturi alias
+                    sed dolorum! <a href="post.html" class="go-to">Read more...</a>
+                </p>
+                <hr>
+            </article>
+            <article class="post-card">
+                <hr>
+                <div class="post-header">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="hero-img">
+                        <img src="./imgs/lorem.png" alt="">
+                    </div>
+                    <span>Author Name</span>
+                    <span class="date">01-06-2020</span>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur <em>adipisicing elit</em>.
+                    <strong>Necessitatibus repudiandae</strong> corporis iusto fugiat unde sit, aliquam excepturi alias
+                    sed dolorum! <a href="post.html" class="go-to">Read more...</a>
+                </p>
+                <hr>
+            </article>
+            <article class="post-card">
+                <hr>
+                <div class="post-header">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="hero-img">
+                        <img src="./imgs/lorem.png" alt="">
+                    </div>
+                    <span>Author Name</span>
+                    <span id="date">01-06-2020</span>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur <em>adipisicing elit</em>.
+                    <strong>Necessitatibus repudiandae</strong> corporis iusto fugiat unde sit, aliquam excepturi alias
+                    sed dolorum!
+                    <br>
+                    <a href="post.html" class="go-to">Read more...</a>
+                </p>
+                <hr>
+            </article>
+        </div>
+        <ul class="topics">
+            <li><a href="#">Topic 1</a></li>
+            <li><a href="#">Topic 2</a></li>
+            <li><a href="#">Topic 3</a></li>
+            <li><a href="#">Topic 4</a></li>
+        </ul>
+        <footer class="ft">
+            Copyright: David Bacter 2020
+        </footer>
+    </div>
 </body>
 
 </html>

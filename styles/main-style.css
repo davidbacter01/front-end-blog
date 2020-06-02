@@ -1,0 +1,11 @@
+@import "navbar-style.css";
+@import "mobile-style.css";
+@import "tablet-style.css";
+@import "post.css";
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: white;
+}

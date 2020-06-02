@@ -1,4 +1,4 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 60px 1fr auto 80px;
@@ -6,7 +6,7 @@
     background-color: aliceblue;  
 }
 
-.subscribe{
+.subscribe {
     display:flex;
     flex-direction: column;
     padding:0 15px 20px 15px;
@@ -15,7 +15,13 @@
     color: white;
 }
 
-.submit-btn{
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: safe;
+}
+.submit-btn {
     margin-top: 5px;
     padding: 5px auto 5px auto;
     border: none;
@@ -26,16 +32,16 @@
     background-color: rgb(34, 185, 34);
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     opacity: 0.75;
     cursor: pointer;
 }
 
-p{
+p {
     line-height: 25px;
 }
 
-.go-to{
+.go-to {
     border: solid 2px rgb(69, 112, 255);
     padding: 5px;
     border-radius: 5px;
@@ -47,11 +53,11 @@ p{
 
 .subscribe h2,
 h3,
-label{
+label {
     margin:10px auto;
 }
 
-.ft{
+.ft {
     display:flex;
     align-items: center;
     justify-content: center;
